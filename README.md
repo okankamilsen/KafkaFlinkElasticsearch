@@ -1,5 +1,8 @@
 # Kafka Flink Elasticsearch-6.4.2
 
+Thanks to keiraqz. Updated version of the keiraqz's project for Elasticsearch-6.4.2 and Kafka 0.11.
+https://github.com/keiraqz/KafkaFlinkElastic
+
 * Build the project
 
 ```
@@ -69,3 +72,6 @@ run   : mvn exec:java -Dexec.mainClass=viper.KafkaFlinkElastic
 			<version>1.6.0</version>
 	</dependency>
 	```
+	
+* Telegram 
+	get your own token and chat id and change the urlString in sendToTelegram method.
