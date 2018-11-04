@@ -85,8 +85,8 @@ public class KafkaFlinkElastic {
             //List<InetSocketAddress> transports = new ArrayList<>();
             //transports.add(new InetSocketAddress("127.0.0.1", 9300)); // port is 9300 not 9200 for ES TransportClient
             List<HttpHost> httpHost = new ArrayList<>();
-            //httpHost.add(new HttpHost("127.0.0.1", 9200, "http"));
-            //httpHost.add(new HttpHost("10.2.3.1", 9200, "http"));
+            httpHost.add(new HttpHost("127.0.0.1", 9200, "http"));
+            httpHost.add(new HttpHost("10.2.3.1", 9200, "http"));
             
 
             
