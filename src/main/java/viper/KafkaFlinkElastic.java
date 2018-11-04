@@ -47,7 +47,7 @@ public class KafkaFlinkElastic {
         // set up the execution environment
         Properties properties = new Properties();
         properties.setProperty("topic", "MyFirstTopic");
-        properties.setProperty("bootstrap.servers", "35.242.181.191:9094");
+        properties.setProperty("bootstrap.servers", "localhost:9094");
         properties.setProperty("group.id", "test");
         DataStream<String> stream = env.addSource(
                 new FlinkKafkaConsumer011<>("MyFirstTopic", new SimpleStringSchema(), properties));
@@ -87,7 +87,6 @@ public class KafkaFlinkElastic {
             List<HttpHost> httpHost = new ArrayList<>();
             //httpHost.add(new HttpHost("127.0.0.1", 9200, "http"));
             //httpHost.add(new HttpHost("10.2.3.1", 9200, "http"));
-            httpHost.add(new HttpHost("35.242.129.198", 9200, "http"));
             
 
             
