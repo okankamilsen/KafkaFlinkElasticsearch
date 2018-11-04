@@ -56,10 +56,8 @@ public class KafkaFlinkElastic {
     }
 
     public static String sendToTelegram(Date date) throws MalformedURLException,IOException{
-    	String urlString = "https://api.telegram.org/bot737320676:AAFaO4ViHPH1jvL9EV9cn2CYzTvq0KOqAyk/sendMessage?chat_id=435454089&text=";
+    	String urlString = "https://api.telegram.org/botTOKEN/sendMessage?chat_id=ID&text=";
 
-    	String apiToken = "737320676:AAFaO4ViHPH1jvL9EV9cn2CYzTvq0KOqAyk";
-    	String chatId = "435454089";
     	String text = "Somebody is knocking your door. Time: "+date;
 
     	//urlString = String.format(urlString, apiToken, chatId, text);
